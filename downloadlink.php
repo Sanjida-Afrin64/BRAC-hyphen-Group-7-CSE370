@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['file_name'])) {
     $filename=basename($_GET['file_name']);
-    $directory='C:/New_xamp/htdocs/Project/Resume/';
+    $directory='C:/New_xampp/htdocs/Project/Resume/';
     $filepath=$directory.$filename;
 
     if (file_exists($filepath)) {
@@ -21,4 +21,5 @@ if (isset($_GET['file_name'])) {
 //"Here’s its type and name."
 //"Do not cache it; always fetch the latest version."
 //"Here’s how big it is, so you can show progress."
+
 }
