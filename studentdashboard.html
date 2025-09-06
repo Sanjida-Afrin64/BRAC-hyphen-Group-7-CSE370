@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Skills & Offers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6fb;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 230px;
+      background: #1f2937;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      margin: 0 0 20px;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .sidebar a {
+      color: #cbd5e1;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 8px;
+      transition: background 0.2s;
+    }
+    .sidebar a:hover {
+      background: #374151;
+      color: #fff;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      padding: 30px;
+    }
+    .main h1 {
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: #2c3e50;
+    }
+
+    /* Dashboard cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 500;
+      color: #fff;
+      background: linear-gradient(135deg, #4e73df, #224abe);
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background: linear-gradient(135deg, #3759c9, #1b3a94);
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>My Dashboard</h2>
+    <a href="stcollabpage.html">Upload Skills</a>
+    <a href="show_projectoffers.php">Project Offers</a>
+    <a href="studentviewoffer.php">Project Requests</a>
+    <a href="career/form.html">Career Roadmap</a>
+    <a href="progress/form.html">Progress Tracker</a>
+    <a href="alumni/bhalumnis.html">Alumni</a>
+  </div>
+
+ 
+  <div class="main">
+    <h1>Welcome, 🚀</h1>
+    <div class="grid">
+      <div class="card"><a href="student_project/stcollabpage.html" class="btn">Upload My Skills</a></div>
+      <div class="card"><a href="student_project/show_projectoffers.php" class="btn">View Project Offers</a></div>
+      <div class="card"><a href="3buttons.html" class="btn">Add Course</a></div>
+      <div class="card"><a href="COOPS/stdviewcoops.php" class="btn">View Co-ops Offer</a></div>
+      <div class="card"><a href="COOPS/co-ops.html" class="btn">Find Co-ops</a></div>
+      <div class="card"><a href="career/form.html" class="btn">Career Roadmap</a></div>
+      <div class="card"><a href="progress/form.html" class="btn">Progress Tracker</a></div>
+      <div class="card"><a href="alumni/bhalumnis.html" class="btn">Alumni</a></div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+

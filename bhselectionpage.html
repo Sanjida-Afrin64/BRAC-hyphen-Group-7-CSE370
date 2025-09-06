@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BRAC-hypen Homepage</title>
+        <meta author="Group 7">
+        <link rel="stylesheet" href="allstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body class="spofbh">
+        <div class="t1">
+            <p>Are You A &#8230;</p>
+        </div>
+        <div class="b1div">
+            <a id="facbutt" class="b1" href="#">Faculty &#63;</a>
+        </div>
+        
+        <div class="b2div">
+            <a id="studbutt" class="b2" href="#">Student &#63;</a>
+        </div>
+        <div class="t2">
+            <p>&#8230; Or &#8230;</p>
+        </div>
+        <script>
+        const params = new URLSearchParams(window.location.search);
+        const mode = params.get("mode");
+        const facultyBtn = document.getElementById("facbutt");
+        const studentBtn = document.getElementById("studbutt");
+        
+        if (mode === "login") {
+            facultyBtn.href = "bhloginfac.html";
+            studentBtn.href = "bhlogin.html";
+            } else {
+                facultyBtn.href = "bhsigninfac.html";
+                studentBtn.href = "bhsignin.html";
+                }
+        </script>
+    </body>
+</html>

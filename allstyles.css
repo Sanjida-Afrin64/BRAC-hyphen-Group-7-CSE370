@@ -1,0 +1,867 @@
+/* SIGN IN */
+
+body.signintobe {
+    background-image: url(bhsignin.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    font-family: sans-serif;
+    padding: 70px;
+    width: 600px;
+    margin: auto;
+}
+
+.signin {
+    padding-top: 10px;
+    padding-bottom:20px;
+    margin-bottom: 0px;
+    height: 700px;
+    background-color: white;
+    border-style: solid;
+    border-color: rgba(17, 98, 220, 0.51);
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgba(252, 253, 254, 0.59);
+}
+
+.signintitle {
+    color: rgba(17, 98, 220, 1);
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sid {
+    font-size: 17px;
+    padding-top: 15px;
+    padding-left: 60px;
+    margin-bottom: 7px;
+}
+
+.id {
+    width: 450px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 7px;
+    margin-left: 60px;
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(17,98,220, 0.52);
+}
+
+.id:focus {
+    outline: none;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgba(17,98,220, 0.67);
+}
+
+.sname {
+    font-size: 17px;
+    padding-top: 15px;
+    padding-left: 60px;
+    margin-bottom: 7px;
+}
+
+.nm {
+    width: 450px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 7px;
+    margin-left: 60px;
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(17, 98, 220, 0.52);
+}
+
+.nm:focus {
+    outline: none;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgba(17, 98, 220, 0.67);
+}
+
+.stit {
+    font-size: 17px;
+    padding-top: 15px;
+    padding-left: 60px;
+    margin-bottom: 7px;
+}
+
+.credentials {
+    width: 450px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 7px;
+    margin-left: 60px;
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(17,98,220,0.52);
+}
+
+.credentials:focus {
+    outline: none;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgba(17, 98, 220, 0.67);
+}
+
+.spass {
+    font-size: 17px;
+    padding-top: 5px;
+    padding-left: 60px;
+    margin-bottom: 7px;
+}
+
+.pass {
+    width: 450px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 7px;
+    margin-left: 60px;
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(17, 98, 220, 0.52);
+}
+
+.pass:focus {
+    outline: none;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgba(17, 98, 220, 0.67);
+}
+
+.sf {
+    display: block;
+    font-size: 20px;
+    padding: 7px 20px 7px 20px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(17, 98, 220);
+    color: white;
+    border-style: none;
+    border-width: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sf:hover {
+    box-shadow: 0px 0px 30px rgba(44, 115, 208, 0.36);
+}
+
+.lb {
+    color: rgba(103, 101, 101, 0.3);
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 35px;
+}
+
+.goo {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 138px;
+    border-style: solid;
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 15px;
+    border-width: 1px;
+    border-color: rgba(17, 98, 220, 0.52);
+    
+}
+
+.goologo {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.gootit {
+    margin-left: 10px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.goo:hover {
+    box-shadow: 0px 0px 20px rgba(44, 115, 208, 0.22);
+}
+
+.cred {
+    font-size: 8px;
+    color: rgba(117, 5, 5, 0.51);
+    text-align: center;
+    margin-top: 47px;
+    font-style: bold;
+}
+
+.csegrp {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* LOGIN */
+
+body.logintobe {
+    background-image: url(bhlogin.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    padding: 40px;
+    width: 600px;
+    margin: auto;
+}
+
+.login {
+    padding-top: 10px;
+    margin-top: 20px;
+    height: 650px;
+    background-color: white;
+    border-style: solid;
+    box-shadow: 0px 0px 50px rgba(240, 240, 243, 0.55);
+    border-color: rgba(209,11,113, 0.51);
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.logintitle {
+    color: rgb(209,11,113);
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 47px;
+}
+
+.lid {
+    width: 450px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 7px;
+    margin-left: 60px;
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(209, 11, 113, 0.52);
+}
+
+.lid:focus {
+    outline: none;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgba(209, 11, 113,0.67);
+}
+
+.lpass {
+    width: 450px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 7px;
+    margin-left: 60px;
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(209, 11, 113, 0.52);
+}
+
+.lpass:focus {
+    outline: none;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgba(209, 11, 113, 0.67);
+}
+
+.lf {
+    display: block;
+    font-size: 20px;
+    padding: 7px 20px 7px 20px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgba(209, 11, 113);
+    color: white;
+    border-style: none;
+    border-width: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.lf:hover {
+    box-shadow: 0px 0px 30px rgba(209, 11, 113,0.36);
+}
+
+.lgoo {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 138px;
+    border-style: solid;
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 15px;
+    border-width: 1px;
+    border-color: rgba(209, 11, 113, 0.52);
+
+}
+
+.goologo {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.gootit {
+    margin-left: 10px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.lgoo:hover {
+    box-shadow: 0px 0px 20px rgba(209, 11, 113, 0.22);
+}
+
+.creds {
+    font-size: 8px;
+    color: rgba(117, 5, 5, 0.51);
+    text-align: center;
+    margin-top: 94px;
+    font-style: bold;
+}
+
+.csegrp {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* HOME PAGE */
+
+body.hpofbe {
+    background-image: url(bhhomepage.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 45px;
+    height: 70vh;
+}
+
+.hp {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 15px rgba(209, 11, 113, 1);
+    padding-left: 90px;
+    display: inline;
+    padding-right: 1010px;
+}
+
+.loginbutt {
+    margin-right: 90px;
+    vertical-align: text-bottom;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+    background-color: rgba(209, 11, 113, 1);
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.loginbutt:hover {
+    color: rgba(209, 11, 113, 1);
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.34);
+}
+
+.deets {
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-size: 90px;
+    line-height: 20px;
+    padding: 15px;
+}
+
+.noice {
+    font-size: 40px;
+    vertical-align: middle;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.pnm {
+    margin-top: 150px;
+    font-family: Bebas Neue, sans-serif;
+    text-shadow: 0px 0px 10px rgba(209, 11, 113, 0.67);
+    margin-bottom: 75px;
+}
+
+.hpdesc {
+    font-size: 27px;
+    text-align: center;
+    font-family: Arial;
+    line-height: 30px;
+    font-style: italic;
+    margin-bottom: 75px;
+}
+
+.signinbutt {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+    background-color: rgba(209, 11, 113, 1);
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.arrow {
+    margin-left: 10px;
+}
+
+.signinbutt:hover {
+    color: rgba(209, 11, 113, 1);
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.34);
+}
+
+.q {
+    font-size: 25px;
+    display: inline;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(209, 11, 113, 0.76);
+    vertical-align: baseline;
+}
+
+/* FAC SIGN IN */
+
+body.facsignintobe {
+    background-image: url(bhlogin.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    padding: 70px;
+    width: 600px;
+    margin: auto;
+}
+
+/* FAC LOG IN */
+
+body.faclogintobe {
+    background-image: url(bhsignin.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    padding: 40px;
+    width: 600px;
+    margin: auto;
+    height: 90vh;
+}
+
+/* SELECTION PAGE */
+
+body.spofbh {
+    background-image: url(bhselectionpage.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 93vh;
+    margin: auto;
+    color: white;
+}
+
+.t1 {
+    font-family: Cinzel;
+    font-weight: 600;
+    margin-left: 60px;
+    font-size: 70px;
+}
+
+.t2 > * {
+    font-family: Cinzel;
+    font-weight: 600;
+    margin-right: 80px;
+    font-size: 70px;
+    text-align: right;
+    margin-top: 0px;
+}
+
+.b1 {
+    vertical-align: text-bottom;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+    background-color: rgba(209, 11, 113, 1);
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.b1:hover {
+    color: rgba(209, 11, 113, 1);
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(209, 11, 113, 0.69);
+}
+
+.b2 {
+    vertical-align: text-bottom;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+    background-color: rgba(11, 74, 209, 1);
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.b2:hover {
+    color: rgba(11, 74, 209, 1);
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(11, 74, 209,0.69);
+}
+
+.b1div {
+    text-align: right;
+    padding-top: 35px;
+    padding-right: 220px;
+    margin-bottom: 0px;
+}
+
+.b2div {
+    padding-top: 210px;
+    padding-left: 160px;
+}
+
+/* ALUMNI PAGE */
+
+body.bhofal {
+    background-image: url(bhofal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.bhalumni {
+    font-size: 60px;
+    display: inline-block;
+    margin-bottom: 90px;
+    margin-left: 50px;
+    margin-right: 860px;
+    margin-top: 50px;
+    color: rgb(3, 45, 136);
+}
+
+.shp {
+    display: inline-block;
+    font-size: 20px;
+    color:black;
+    text-align: right;
+    text-decoration: none;
+}
+
+.shp:hover {
+    text-decoration: underline;
+}
+
+.al {
+    position: relative;
+    width: 400px;
+    background: linear-gradient(135deg, rgba(11, 74, 209, 1), rgba(58, 123, 213, 1),rgba(58, 123, 213, 1), rgba(11, 74, 209, 1));
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px black;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-left: 66px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.pfp {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+.n {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(3, 45, 136, 1);
+    margin-bottom: 8px;
+}
+
+.u {
+    font-size: 15px;
+    color: white;
+    margin: 3px 0;
+}
+
+.w {
+    font-size: 15px;
+    color: white;
+    margin: 3px 0;
+}
+
+.profile {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    font-size: 25px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.al:hover .profile {
+    opacity: 1;
+}
+
+.portfolio {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 1000px;
+    left: 500px;
+    box-shadow: 0px 4px 10px rgb(17, 98, 220);
+}
+
+.portfolio.open {
+    max-height: 1000px;
+    opacity: 1;
+    display: block;
+}
+
+.askq {
+    color:rgb(17, 98, 220);
+    opacity: 0;
+    transition: 0.4s ease;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.al:hover .askq {
+    margin-top: 25px;
+    opacity: 1;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(209, 11, 113, 0.69);
+    text-decoration: underline;
+}
+
+/* ASK ME */
+
+body.bhaskme {
+    background-image: url(bhaskme.jpg);
+    width: 1000px;
+    margin: auto;
+}
+
+.askmediv {
+    height: 670px;
+    border: 2px solid rgb(218, 22, 153);
+    background-color: white;
+    margin: 49px auto;
+}
+
+.askmetitle {
+    text-align: center;
+    font-size: 58px;
+    font-family: Arial;
+    color:rgb(218, 22, 153);
+    padding: 20px;
+}
+
+.tits {
+    text-align: left;
+    font-size: 25px;
+    margin-left: 90px;
+    padding-top: 10px;
+    margin-bottom: 7px;
+}
+
+.ph {
+    width: 450px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    margin-left: 90px;
+    padding-right: 350px;
+    font-size: 13px;
+    border: 1px solid rgb(218, 22, 153, 0.52);
+    border-radius: 3px;
+}
+
+.ph:focus {
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid rgb(218, 22, 153, 0.67);
+}
+
+.qph {
+    width: 450px;
+    padding-top: 13px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    margin-left: 90px;
+    padding-right: 350px;
+    font-size: 13px;
+    border: 1px solid rgb(218, 22, 153, 0.52);
+    border-radius: 3px;
+    font-family: Arial;
+}
+
+.qph:focus {
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid rgb(218, 22, 153, 0.67);
+}
+
+.submitq {
+    display: block;
+    margin: 70px auto 0; 
+    padding: 10px 25px; 
+    font-size: 20px;
+    background-color:rgb(218, 22, 153);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.submitq:hover {
+    color:rgb(218, 22, 153);
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(218, 22, 153, 0.57);
+    border: 1px solid rgba(218, 22, 153);
+}
+
+/* STUDENT HOMEPAGE */
+
+body.bhstudhp {
+    font-family: Arial, sans-serif;
+    background: #e5eef7ff;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.studhptitle {
+    color: #0b4ad1;
+    font-size: 70px;
+    margin-bottom: 90px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 90px;
+    padding: 20px;
+    margin-right: 30px;
+    background: linear-gradient(135deg, rgba(11, 74, 209, 1), rgba(58, 123, 213, 1),rgba(58, 123, 213, 1), rgba(11, 74, 209, 1));
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.38);
+    padding-bottom: 70px;
+}
+
+.hed {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.prg {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.arrow {
+    font-size: 26px;
+    background: rgba(255, 255, 255, 0.88);
+    color: #0b4ad1;
+    border-radius: 100%;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover .arrow {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.bhstud {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 60px;
+    display: inline-block;
+    margin-bottom: 70px;
+    margin-left: 80px;
+    margin-right: 1000px;
+    margin-top: 20px;
+    color: rgb(3, 45, 136);
+}
+
+.studhp {
+    display: inline-block;
+    font-size: 20px;
+    color:black;
+    text-align: right;
+    text-decoration: none;
+}
+
+.studhp:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,85 @@
+<div style="width:100%; background-color:#001f4d; padding:15px 20px; position:fixed; top:0; left:0; z-index:1000; display:flex; align-items:center; gap:20px; font-size:18px; box-sizing:border-box;border: 6px solid #0e075a; ">
+    <a href="studentdashboard.html" style="color:white; text-decoration:none;">Dashboard</a>
+    <a href="student_project/stcollabpage.html" style="color:white; text-decoration:none;">Upload My Skills</a>
+    <a href="student_project/show_projectoffers.php" style="color:white; text-decoration:none;">View Project Offers</a>
+    <a href="3buttons.html" style="color:white; text-decoration:none;">Add Course</a>
+    <a href="COOPS/stdviewcoops.php" style="color:white; text-decoration:none;">View Co-ops Offer</a>
+    <a href="COOPS/co-ops.html" style="color:white; text-decoration:none;">Find Co-ops</a>
+    <a href="career/form.html" style="color:white; text-decoration:none;">Career Roadmap</a>
+    <a href="progress/form.html" style="color:white; text-decoration:none;">Progress Tracker</a>
+    <a href="alumni/bhalumnis.html" style="color:white; text-decoration:none;">Alumni</a> 
+</div>
+
+<br>
+<br>
+<br>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Courses & Actions</title>
+    <style>
+        body { background: #e6e6f0; color: #0e075a; font-family: 'Times New Roman', Times, serif; text-align: center; margin-top: 50px; }
+        input, button { padding: 8px; margin: 5px; border-radius: 4px; border: none; }
+        .add-btn { background: #5a0707; color: white; cursor: pointer; }
+        .action-btn { background: #968bb0; color: white; cursor: pointer; }
+        .action-btn:hover { background: #1e1163; }
+        #result { margin-top: 20px; padding: 15px; background: #a2a1a1; border-radius: 1px; }
+        ul { list-style: none; padding: 0; }
+    </style>
+</head>
+<body>
+
+<h1>Add Your Courses</h1>
+<div id="courseContainer">
+    <input type="text" name="courses[]" placeholder="Enter Course Code" class="course-input" required>
+</div>
+<button type="button" class="add-btn" onclick="addCourseInput()">+ Add Course</button>
+
+<h2>Actions</h2>
+<button class="action-btn" onclick="sendRequest('skills')">Content</button>
+<button class="action-btn" onclick="sendRequest('recommend')">Recommendation</button>
+<button class="action-btn" onclick="sendRequest('unlock')">Unlock Courses</button>
+
+<div id="result">Click a button to see results here</div>
+
+<script>
+function addCourseInput() {
+    const container = document.getElementById("courseContainer");
+    const input = document.createElement("input");
+    input.type = "text";
+    input.name = "courses[]";
+    input.placeholder = "Enter Course Code";
+    input.className = "course-input";
+    input.required = true;
+    container.appendChild(input);
+}
+
+function sendRequest(action) {
+    const formData = new FormData();
+   
+    document.querySelectorAll('.course-input').forEach(input => {
+        const val = input.value.trim().toUpperCase();
+        if(val !== '') {
+            formData.append('courses[]', val);
+        }
+    });
+    formData.append('action', action);
+
+    
+    if(!formData.getAll('courses[]').length) {
+        document.getElementById('result').innerHTML = 'Please enter at least one valid course.';
+        return;
+    }
+
+    fetch('recommend.php', { method: 'POST', body: formData })
+        .then(res => res.text())
+        .then(data => document.getElementById('result').innerHTML = data)
+        .catch(err => document.getElementById('result').innerHTML = 'Error: ' + err);
+}
+</script>
+
+</body>
+</html>
+
+
+
