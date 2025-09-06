@@ -1,0 +1,111 @@
+<div style="width:100%; background-color:#001f4d; padding:15px 20px; position:fixed; top:0; left:0; z-index:1000; display:flex; align-items:center; gap:20px; font-size:18px; box-sizing:border-box;">
+    <a href="../student_project/stcollabpage.html" style="color:white; text-decoration:none;">Upload My Skills</a>
+    <a href="../student_project/show_projectoffers.php" style="color:white; text-decoration:none;">View Project Offers</a>
+    <a href="../3buttons.html" style="color:white; text-decoration:none;">Add Course</a>
+    <a href="../COOPS/stdviewcoops.php" style="color:white; text-decoration:none;">View Co-ops Offer</a>
+    <a href="../COOPS/co-ops.html" style="color:white; text-decoration:none;">Find Co-ops</a>
+    <a href="form.html" style="color:white; text-decoration:none;">Career Roadmap</a>
+    <a href="../progress/form.html" style="color:white; text-decoration:none;">Progress Tracker</a>
+    <a href="../alumni/bhalumnis.html" style="color:white; text-decoration:none;">Alumni</a> "<br>"
+</div>
+
+
+
+<br>
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Careers</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f5f5f5;
+    }
+    h1 {
+        color: #032d88;
+    }
+    .career-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .career-item {
+        background-color: #fff;
+        padding: 12px;
+        border: 1px solid rgb(3, 45, 136);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .career-item:hover {
+        background-color: #e6ebff;
+    }
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    #selected-careers {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: rgb(3, 45, 136);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #021f63;
+    }
+</style>
+</head>
+<body>
+
+<h1>Select Your Careers</h1>
+
+<form action="selected.php" method="post">
+    <div class="career-list">
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Software Developer">Software Developer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Web Developer">Web Developer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Mobile App Developer">Mobile App Developer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Game Developer">Game Developer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Embedded Systems Engineer">Embedded Systems Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="IoT Engineer">IoT Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Database Administrator">Database Administrator</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Data Analyst">Data Analyst</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Data Scientist">Data Scientist</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Machine Learning Engineer">Machine Learning Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="AI Engineer">Artificial Intelligence Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Computer Vision Engineer">Computer Vision Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Big Data Engineer">Big Data Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Business Intelligence (BI) Developer">Business Intelligence (BI) Developer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Systems Administrator">Systems Administrator</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Systems Analyst">Systems Analyst</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Network Engineer">Network Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Cloud Engineer">Cloud Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="DevOps Engineer">DevOps Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Cloud Security Engineer">Cloud Security Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Cybersecurity Analyst">Cybersecurity Analyst</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Ethical Hacking">Ethical Hacker</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Blockchain Developer">Blockchain Developer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Robotics Engineer">Robotics Engineer</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="IT Support Specialist">IT Support Specialist</label>
+        <label class="career-item"><input type="checkbox" name="careers[]" value="Computer Hardware Engineer">Computer Hardware Engineer</label>
+
+    </div>
+
+    <button type="submit">Submit Selected Careers</button>
+</form>
+
+</body>
+</html>
