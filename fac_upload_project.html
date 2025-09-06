@@ -1,0 +1,180 @@
+
+
+<?php
+session_start();
+if ($_SESSION['admin']=='yes') {
+    include('../topbar_admin.php');
+}else {
+    include('../topbar_fac.php');
+}
+require_once('../connection.php');
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Project</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+
+       
+        .homepage-link {
+            position: fixed;       
+            top: 20px;            
+            right: 20px;           
+            background: #3498db;  
+            color: white;          
+            padding: 10px 16px;    
+            border-radius: 6px;   
+            text-decoration: none; 
+            font-weight: 600;
+            transition: background 0.3s ease;
+            z-index: 1000;         
+        }
+
+        .homepage-link:hover {
+            background: #2d85c7;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+
+        label {
+            font-weight: 600;
+            color: #34495e;
+            display: block;
+            margin: 12px 0 6px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #dcdfe3;
+            font-size: 14px;
+            background: #fafafa;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 6px rgba(52,152,219,0.3);
+            background: #fff;
+        }
+
+        .skill-box {
+            margin-top: 10px;
+            padding: 15px;
+            background: #f9fbfd;
+            border-radius: 10px;
+            border: 1px solid #e3e7ed;
+        }
+
+        .skill-box label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            cursor: pointer;
+            color: #2c3e50;
+            transition: color 0.2s ease;
+        }
+
+        .skill-box label:hover {
+            color: #3498db;
+        }
+
+        .skill-box input[type="checkbox"] {
+            accent-color: #3498db;
+            margin-right: 8px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            background: #3498db;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.1s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #2d85c7;
+        }
+
+        input[type="submit"]:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+<div class="container">
+    <h2>Upload Project</h2>
+
+    <form action="fac_upload_code.php" method="POST">
+        <label>Project Title:</label>
+        <input type="text" name="title" required>
+
+        <label>Project Description:</label>
+        <textarea name="description" placeholder="Write project description here..." required></textarea>
+
+        <label>Skills Required:</label>
+        <div class="skill-box">
+            <label><input type="checkbox" name="skills[]" value="Python/Java"> Python/Java</label>
+            <label><input type="checkbox" name="skills[]" value="Neural Network"> Neural Network </label>
+            <label><input type="checkbox" name="skills[]" value="C++"> C++</label>
+            <label><input type="checkbox" name="skills[]" value="NLP"> NLP</label>
+            <label><input type="checkbox" name="skills[]" value="Machine Learning"> Machine Learning</label>
+            <label><input type="checkbox" name="skills[]" value="Deep Learning"> Deep Learning</label>
+            <label><input type="checkbox" name="skills[]" value="Data Analysis"> Data Analysis</label>
+            <label><input type="checkbox" name="skills[]" value="Cloud Computing"> Cloud Computing</label>
+            <label><input type="checkbox" name="skills[]" value="Cybersecurity"> Cybersecurity</label>
+            <label><input type="checkbox" name="skills[]" value="AI"> AI</label>
+        </div>
+
+        <label>Other Skills:</label>
+        <input type="text" name="other_skills" placeholder="Comma-separated skills">
+
+        <input type="submit" value="Upload Project">
+    </form>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
