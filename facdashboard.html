@@ -1,46 +1,28 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Co-op Portal</title>
-<style>
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        gap: 20px;
-        background-color: #f2f2f2;
-        font-family: Arial, sans-serif;
-    }
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Homepage</title>
+    <link rel="stylesheet" href="allstyles.css">
+  </head>
+  <body class="bhstudhp">
+    <h1 class="bhstud">BRAC&#8208;HYPEN</h1>
+    <a href="#"><span class="studhp">Log Out</span>
+    </a>
+    <h1 class="studhptitle">Welcome&#44; Faculty&#33;</h1>
+    <div style="text-align: center;">
+        <div class="card">
+            <h2 class="hed">Projects</h2>
+            <p class="prg">Upload project to receive requests&#46;</p>
+            <a href="#" class="arrow">&#10549;</a>
+        </div>
 
-    a.button {
-        display: inline-block;
-        text-decoration: none;
-        padding: 15px 35px;
-        font-size: 18px;
-        border-radius: 8px;
-        background: linear-gradient(135deg, #4CAF50, #2E8B57);
-        color: white;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-        transition: all 0.3s ease;
-    }
-
-    a.button:hover {
-        background: linear-gradient(135deg, #45a049, #218c51);
-        transform: translateY(-3px);
-        box-shadow: 0 6px 10px rgba(0,0,0,0.3);
-    }
-</style>
-</head>
-<body>
-
-    <a href="fac_project/fac_upload_project.html" class="button">Upload Project</a>
-    <a href="fac_project/facview.php" class="button">View Project-Collab Requests</a>
-    
-
-</body>
+        <div class="card">
+            <h2 class="hed">Project Requests</h2>
+            <p class="prg">View and manage requests&#46;</p>
+            <a href="#" class="arrow">&#10549;</a>
+        </div>
+    </div>
+  </body>
 </html>

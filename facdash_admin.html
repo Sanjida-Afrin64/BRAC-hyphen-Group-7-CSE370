@@ -1,48 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Co-op Portal</title>
-<style>
+  <meta charset="UTF-8">
+  <title>Dashboard - Skills & Offers</title>
+  <style>
     body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        gap: 20px;
-        background-color: #f2f2f2;
-        font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6fb;
+      display: flex;
+      min-height: 100vh;
     }
 
-    a.button {
-        display: inline-block;
-        text-decoration: none;
-        padding: 15px 35px;
-        font-size: 18px;
-        border-radius: 8px;
-        background: linear-gradient(135deg, #4CAF50, #2E8B57);
-        color: white;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-        transition: all 0.3s ease;
+    /* Sidebar */
+    .sidebar {
+      width: 230px;
+      background: #1f2937;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      margin: 0 0 20px;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .sidebar a {
+      color: #cbd5e1;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 8px;
+      transition: background 0.2s;
+    }
+    .sidebar a:hover {
+      background: #374151;
+      color: #fff;
     }
 
-    a.button:hover {
-        background: linear-gradient(135deg, #45a049, #218c51);
-        transform: translateY(-3px);
-        box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    /* Main content */
+    .main {
+      flex: 1;
+      padding: 30px;
     }
-</style>
+    .main h1 {
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: #2c3e50;
+    }
+
+  </style>
 </head>
 <body>
-
-    <a href="fac_project/fac_upload_project.html" class="button">Upload Project</a>
-    <a href="fac_project/facview.php" class="button">View Project-Collab Requests</a>
-    <a href="Fac_approve_COOP/adminportal.php" class="button">View Co-op Requests</a>
-    <a href="fac_project/admin_work.php" class="button">CO-OPS Details</a>
-
+ 
+  <div class="main">
+    <h1>Welcome, Faculty!</h1>
+    <div class="grid">
+      <a href="fac_project/fac_upload_project.html" class="button">Upload Project</a>
+      <a href="facview.php" class="button">View Project-Collab Requests</a>
+      <a href="adminportal.php" class="button">View Co-op Requests</a>
+    </div>
+  </div>
 </body>
 </html>
+
+
+
+
 
 
